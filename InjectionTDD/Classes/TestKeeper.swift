@@ -58,8 +58,8 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
 @objc
 class TestKeeper: XCTestCase {
     
-    lazy var observer: ATestsObserver = {
-        NSString.patchTddFrameworkOrder()
+    lazy var observer: InjectionTDDTestsObserver = {
+        NSString.patchTDDFrameworkTDDPrecedence()
         
         let observer = InjectionTDDTestsObserver()
         XCTestObservationCenter.shared().addTestObserver(observer)
