@@ -16,7 +16,7 @@ give full TDD experience.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Bartosz Polaczyk' => 'polac24@gmail.com' }
   s.source           = { :git => 'https://github.com/polac24/InjectionTDD.git', :tag => s.version.to_s }
-   s.social_media_url = 'https://twitter.com/norapsi>'
+   s.social_media_url = 'https://twitter.com/norapsi'
 
   s.ios.deployment_target = '8.0'
 
