@@ -7,37 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		310C91615B435DD46E5B7F34 /* Pods_InjectionTDD_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143CEA12B349DEE1433BC55 /* Pods_InjectionTDD_Tests.framework */; };
+		10C976AA1F6D96CA00B5BBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C976A91F6D96CA00B5BBF7 /* AppDelegate.swift */; };
+		10C976AC1F6D96CA00B5BBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C976AB1F6D96CA00B5BBF7 /* ViewController.swift */; };
+		10C976AF1F6D96CA00B5BBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C976AD1F6D96CA00B5BBF7 /* Main.storyboard */; };
+		10C976B11F6D96CA00B5BBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C976B01F6D96CA00B5BBF7 /* Assets.xcassets */; };
+		10C976B41F6D96CA00B5BBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C976B21F6D96CA00B5BBF7 /* LaunchScreen.storyboard */; };
+		10C976BF1F6D96CB00B5BBF7 /* InjectionTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C976BE1F6D96CB00B5BBF7 /* InjectionTDDTests.swift */; };
+		357F05582110E02E64EFC4D4 /* Pods_InjectionTDDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB34952174F688A48FC67E /* Pods_InjectionTDDTests.framework */; };
+		B0620FA53BFFA6DD736D19CC /* Pods_InjectionTDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB3BDDCB695CB486A4946A6 /* Pods_InjectionTDD.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10C976BB1F6D96CA00B5BBF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C976A61F6D96CA00B5BBF7;
+			remoteInfo = InjectionTDD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0143CEA12B349DEE1433BC55 /* Pods_InjectionTDD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InjectionTDD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACE51AFB9204008FA782 /* InjectionTDD_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjectionTDD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C976A71F6D96CA00B5BBF7 /* InjectionTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InjectionTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C976A91F6D96CA00B5BBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10C976AB1F6D96CA00B5BBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10C976AE1F6D96CA00B5BBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10C976B01F6D96CA00B5BBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10C976B31F6D96CA00B5BBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10C976B51F6D96CA00B5BBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C976BA1F6D96CA00B5BBF7 /* InjectionTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjectionTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C976BE1F6D96CB00B5BBF7 /* InjectionTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionTDDTests.swift; sourceTree = "<group>"; };
+		10C976C01F6D96CB00B5BBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB3BDDCB695CB486A4946A6 /* Pods_InjectionTDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InjectionTDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79985C77740F7DE0B3791DBD /* Pods-InjectionTDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectionTDD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InjectionTDD/Pods-InjectionTDD.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE895B4E794DBE1EF62558F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A1BF993C26BCF93FE5478059 /* Pods-InjectionTDD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectionTDD_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InjectionTDD_Tests/Pods-InjectionTDD_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A3980063C178A7047FFE6628 /* Pods-InjectionTDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectionTDD.release.xcconfig"; path = "Pods/Target Support Files/Pods-InjectionTDD/Pods-InjectionTDD.release.xcconfig"; sourceTree = "<group>"; };
+		AA590F765E138F6AEC994771 /* Pods-InjectionTDDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectionTDDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InjectionTDDTests/Pods-InjectionTDDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAE75AB42E7533B546C9E7A3 /* Pods-InjectionTDD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectionTDD_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InjectionTDD_Tests/Pods-InjectionTDD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0FB34952174F688A48FC67E /* Pods_InjectionTDDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InjectionTDDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1250BA370539426D4731F30 /* Pods-InjectionTDDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectionTDDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InjectionTDDTests/Pods-InjectionTDDTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6A20B224829558874A0D1B7 /* InjectionTDD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = InjectionTDD.podspec; path = ../InjectionTDD.podspec; sourceTree = "<group>"; };
 		F66B387B2A998E336B348778 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		10C976A41F6D96CA00B5BBF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310C91615B435DD46E5B7F34 /* Pods_InjectionTDD_Tests.framework in Frameworks */,
+				B0620FA53BFFA6DD736D19CC /* Pods_InjectionTDD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C976B71F6D96CA00B5BBF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				357F05582110E02E64EFC4D4 /* Pods_InjectionTDDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10C976A81F6D96CA00B5BBF7 /* InjectionTDD */ = {
+			isa = PBXGroup;
+			children = (
+				10C976A91F6D96CA00B5BBF7 /* AppDelegate.swift */,
+				10C976AB1F6D96CA00B5BBF7 /* ViewController.swift */,
+				10C976AD1F6D96CA00B5BBF7 /* Main.storyboard */,
+				10C976B01F6D96CA00B5BBF7 /* Assets.xcassets */,
+				10C976B21F6D96CA00B5BBF7 /* LaunchScreen.storyboard */,
+				10C976B51F6D96CA00B5BBF7 /* Info.plist */,
+			);
+			path = InjectionTDD;
+			sourceTree = "<group>";
+		};
+		10C976BD1F6D96CB00B5BBF7 /* InjectionTDDTests */ = {
+			isa = PBXGroup;
+			children = (
+				10C976BE1F6D96CB00B5BBF7 /* InjectionTDDTests.swift */,
+				10C976C01F6D96CB00B5BBF7 /* Info.plist */,
+			);
+			path = InjectionTDDTests;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				10C976A81F6D96CA00B5BBF7 /* InjectionTDD */,
+				10C976BD1F6D96CB00B5BBF7 /* InjectionTDDTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				8B570278379CFBE1CFFD76BB /* Pods */,
 				FF8B7F25EC8D537A40CAB81F /* Frameworks */,
@@ -47,25 +109,10 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* InjectionTDD_Tests.xctest */,
+				10C976A71F6D96CA00B5BBF7 /* InjectionTDD.app */,
+				10C976BA1F6D96CA00B5BBF7 /* InjectionTDDTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -83,6 +130,10 @@
 			children = (
 				BAE75AB42E7533B546C9E7A3 /* Pods-InjectionTDD_Tests.debug.xcconfig */,
 				A1BF993C26BCF93FE5478059 /* Pods-InjectionTDD_Tests.release.xcconfig */,
+				79985C77740F7DE0B3791DBD /* Pods-InjectionTDD.debug.xcconfig */,
+				A3980063C178A7047FFE6628 /* Pods-InjectionTDD.release.xcconfig */,
+				AA590F765E138F6AEC994771 /* Pods-InjectionTDDTests.debug.xcconfig */,
+				D1250BA370539426D4731F30 /* Pods-InjectionTDDTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -91,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				0143CEA12B349DEE1433BC55 /* Pods_InjectionTDD_Tests.framework */,
+				5FB3BDDCB695CB486A4946A6 /* Pods_InjectionTDD.framework */,
+				C0FB34952174F688A48FC67E /* Pods_InjectionTDDTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,24 +151,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* InjectionTDD_Tests */ = {
+		10C976A61F6D96CA00B5BBF7 /* InjectionTDD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "InjectionTDD_Tests" */;
+			buildConfigurationList = 10C976C11F6D96CB00B5BBF7 /* Build configuration list for PBXNativeTarget "InjectionTDD" */;
 			buildPhases = (
-				E0594893BC9D5CA02674ACDD /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				FAA0FE2A9E204947221F50A0 /* [CP] Embed Pods Frameworks */,
-				17E8B5D3584C7BF8C7A28DB0 /* [CP] Copy Pods Resources */,
+				F2277F43724C11FFC1556F5B /* [CP] Check Pods Manifest.lock */,
+				10C976A31F6D96CA00B5BBF7 /* Sources */,
+				10C976A41F6D96CA00B5BBF7 /* Frameworks */,
+				10C976A51F6D96CA00B5BBF7 /* Resources */,
+				97AEC1F5AF53244851C44D96 /* [CP] Embed Pods Frameworks */,
+				28CA24A39BAD990C9A8873A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = InjectionTDD_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* InjectionTDD_Tests.xctest */;
+			name = InjectionTDD;
+			productName = InjectionTDD;
+			productReference = 10C976A71F6D96CA00B5BBF7 /* InjectionTDD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10C976B91F6D96CA00B5BBF7 /* InjectionTDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C976C41F6D96CB00B5BBF7 /* Build configuration list for PBXNativeTarget "InjectionTDDTests" */;
+			buildPhases = (
+				98A3DB1096149CBD3A32533F /* [CP] Check Pods Manifest.lock */,
+				10C976B61F6D96CA00B5BBF7 /* Sources */,
+				10C976B71F6D96CA00B5BBF7 /* Frameworks */,
+				10C976B81F6D96CA00B5BBF7 /* Resources */,
+				AD4328F95E8389EFD1266546 /* [CP] Embed Pods Frameworks */,
+				FD40F5711265DE065255D112 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10C976BC1F6D96CA00B5BBF7 /* PBXTargetDependency */,
+			);
+			name = InjectionTDDTests;
+			productName = InjectionTDDTests;
+			productReference = 10C976BA1F6D96CA00B5BBF7 /* InjectionTDDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -124,14 +198,18 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Bartosz Polaczyk";
 				TargetAttributes = {
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+					10C976A61F6D96CA00B5BBF7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					10C976B91F6D96CA00B5BBF7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 10C976A61F6D96CA00B5BBF7;
 					};
 				};
 			};
@@ -148,13 +226,24 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* InjectionTDD_Tests */,
+				10C976A61F6D96CA00B5BBF7 /* InjectionTDD */,
+				10C976B91F6D96CA00B5BBF7 /* InjectionTDDTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		10C976A51F6D96CA00B5BBF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C976B41F6D96CA00B5BBF7 /* LaunchScreen.storyboard in Resources */,
+				10C976B11F6D96CA00B5BBF7 /* Assets.xcassets in Resources */,
+				10C976AF1F6D96CA00B5BBF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C976B81F6D96CA00B5BBF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,7 +253,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17E8B5D3584C7BF8C7A28DB0 /* [CP] Copy Pods Resources */ = {
+		28CA24A39BAD990C9A8873A9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,10 +265,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDD_Tests/Pods-InjectionTDD_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDD/Pods-InjectionTDD-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E0594893BC9D5CA02674ACDD /* [CP] Check Pods Manifest.lock */ = {
+		97AEC1F5AF53244851C44D96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDD/Pods-InjectionTDD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A3DB1096149CBD3A32533F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,20 +294,20 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InjectionTDD_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-InjectionTDDTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAA0FE2A9E204947221F50A0 /* [CP] Embed Pods Frameworks */ = {
+		AD4328F95E8389EFD1266546 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDD_Tests/Pods-InjectionTDD_Tests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDDTests/Pods-InjectionTDDTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/InjectionTDD/InjectionTDD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -212,22 +316,170 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDD_Tests/Pods-InjectionTDD_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDDTests/Pods-InjectionTDDTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2277F43724C11FFC1556F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InjectionTDD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD40F5711265DE065255D112 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InjectionTDDTests/Pods-InjectionTDDTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		10C976A31F6D96CA00B5BBF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C976AC1F6D96CA00B5BBF7 /* ViewController.swift in Sources */,
+				10C976AA1F6D96CA00B5BBF7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C976B61F6D96CA00B5BBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C976BF1F6D96CB00B5BBF7 /* InjectionTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		10C976BC1F6D96CA00B5BBF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10C976A61F6D96CA00B5BBF7 /* InjectionTDD */;
+			targetProxy = 10C976BB1F6D96CA00B5BBF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10C976AD1F6D96CA00B5BBF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10C976AE1F6D96CA00B5BBF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10C976B21F6D96CA00B5BBF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10C976B31F6D96CA00B5BBF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		10C976C21F6D96CB00B5BBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79985C77740F7DE0B3791DBD /* Pods-InjectionTDD.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = InjectionTDD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10C976C31F6D96CB00B5BBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3980063C178A7047FFE6628 /* Pods-InjectionTDD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = InjectionTDD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10C976C51F6D96CB00B5BBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA590F765E138F6AEC994771 /* Pods-InjectionTDDTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = InjectionTDDTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InjectionTDD.app/InjectionTDD";
+			};
+			name = Debug;
+		};
+		10C976C61F6D96CB00B5BBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1250BA370539426D4731F30 /* Pods-InjectionTDDTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = InjectionTDDTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InjectionTDD.app/InjectionTDD";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,59 +567,30 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAE75AB42E7533B546C9E7A3 /* Pods-InjectionTDD_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1BF993C26BCF93FE5478059 /* Pods-InjectionTDD_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10C976C11F6D96CB00B5BBF7 /* Build configuration list for PBXNativeTarget "InjectionTDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C976C21F6D96CB00B5BBF7 /* Debug */,
+				10C976C31F6D96CB00B5BBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10C976C41F6D96CB00B5BBF7 /* Build configuration list for PBXNativeTarget "InjectionTDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C976C51F6D96CB00B5BBF7 /* Debug */,
+				10C976C61F6D96CB00B5BBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "InjectionTDD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
 				607FACEE1AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "InjectionTDD_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

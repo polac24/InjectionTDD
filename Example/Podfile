@@ -1,7 +1,13 @@
 platform :ios, '9.0'
 
 use_frameworks!
-target 'InjectionTDD_Tests' do
+
+target 'InjectionTDD' do
+    
+    
+end
+
+target 'InjectionTDDTests' do
   pod 'InjectionTDD', :path => '../'
   
   
