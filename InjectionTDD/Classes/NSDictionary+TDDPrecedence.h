@@ -4,9 +4,8 @@
  *  Licensed under the MIT license, see LICENSE file
  */
 
-#import <UIKit/UIKit.h>
 
-@interface NSString (TDDPrecedence)
+@interface NSDictionary (TDDPrecedence)
 
 + (void) patchTDDFrameworkTDDPrecedence;
 

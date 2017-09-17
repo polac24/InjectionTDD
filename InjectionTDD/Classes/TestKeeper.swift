@@ -59,7 +59,7 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
 class TestKeeper: XCTestCase {
     
     lazy var observer: InjectionTDDTestsObserver = {
-        NSString.patchTDDFrameworkTDDPrecedence()
+        NSDictionary.patchTDDFrameworkTDDPrecedence()
         
         let observer = InjectionTDDTestsObserver()
         XCTestObservationCenter.shared().addTestObserver(observer)
@@ -71,6 +71,7 @@ class TestKeeper: XCTestCase {
     }
     
     func testToBeginTDD(){
+        _ = observer
         RunLoop.current.run()
     }
 }
