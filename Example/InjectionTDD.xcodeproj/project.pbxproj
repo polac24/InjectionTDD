@@ -204,10 +204,12 @@
 				TargetAttributes = {
 					10C976A61F6D96CA00B5BBF7 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					10C976B91F6D96CA00B5BBF7 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 10C976A61F6D96CA00B5BBF7;
 					};
@@ -417,7 +419,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -435,7 +438,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -456,7 +460,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InjectionTDD.app/InjectionTDD";
 			};
 			name = Debug;
@@ -475,7 +480,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.polaczyk.InjectionTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InjectionTDD.app/InjectionTDD";
 			};
 			name = Release;
@@ -577,6 +583,7 @@
 				10C976C31F6D96CB00B5BBF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10C976C41F6D96CB00B5BBF7 /* Build configuration list for PBXNativeTarget "InjectionTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +592,7 @@
 				10C976C61F6D96CB00B5BBF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "InjectionTDD" */ = {
 			isa = XCConfigurationList;

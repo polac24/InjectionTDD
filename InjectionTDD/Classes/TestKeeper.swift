@@ -7,7 +7,6 @@
 
 import XCTest
 
-@objc
 public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
     
     var suites:Set<String> = []
@@ -20,20 +19,18 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
     func finishedWithError(_ name: String){}
     
     public func testSuiteWillStart(_ testSuite: XCTestSuite) {
-        if let name = testSuite.name{
-            suites.insert(name)
-        }
+        suites.insert(testSuite.name)
         failures = 0
         testCases = 0
         failedTestCases = 0
     }
     
     public func testSuiteDidFinish(_ testSuite: XCTestSuite) {
-        guard let name = testSuite.name, suites.contains(name) else {
+        guard suites.contains(testSuite.name) else {
             return
         }
-        suites.remove(name)
-        let safeName = name.replacingOccurrences(of: "\"", with: "")
+        suites.remove(testSuite.name)
+        let safeName = testSuite.name.replacingOccurrences(of: "\"", with: "")
         failures > 0 ? finishedWithError(safeName) : finishedSuccessed(safeName)
     }
     
@@ -43,7 +40,7 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
         failedCurrentTestCase = false
     }
     
-    public func testCase(_ testCase: XCTestCase, didFailWithDescription description: String, inFile filePath: String?, atLine lineNumber: UInt) {
+    public func testCase(_ testCase: XCTestCase, didFailWithDescription description: String, inFile filePath: String?, atLine lineNumber: Int) {
         failures += 1
         failedCurrentTestCase = true
     }
@@ -55,12 +52,12 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
     }
 }
 
-@objc
+
 class TestKeeper: XCTestCase {
     
     var observer: InjectionTDDTestsObserver = {
         let observer = InjectionTDDTestsObserver()
-        XCTestObservationCenter.shared().addTestObserver(observer)
+        XCTestObservationCenter.shared.addTestObserver(observer)
         print("Ready for InjectionTDD...")
         
         RunLoop.current.run()
@@ -68,10 +65,11 @@ class TestKeeper: XCTestCase {
     }()
     
     deinit {
-        XCTestObservationCenter.shared().removeTestObserver(observer)
+        XCTestObservationCenter.shared.removeTestObserver(observer)
     }
     
     // Required to init TestKeeper during reflection lookup
     func testEmpty(){
     }
 }
+
