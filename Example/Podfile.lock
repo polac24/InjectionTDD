@@ -1,5 +1,5 @@
 PODS:
-  - InjectionTDD (0.3.0)
+  - InjectionTDD (0.4.0)
 
 DEPENDENCIES:
   - InjectionTDD (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  InjectionTDD: 838350f362646ef2839c17d177daeb288e9e4608
+  InjectionTDD: b62fa008872173192bc8790e46b3c673230b67ca
 
 PODFILE CHECKSUM: a3392536984f47b240c93de2e19c6e701b6361a2
 
