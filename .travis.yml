@@ -8,3 +8,13 @@ before_install:
 - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild -project Example/Pods/Pods.xcodeproj -scheme InjectionTDD -configuration Debug -sdk iphonesimulator CODE_SIGNING_REQUIRED=NO  build  | xcpretty
+- cd Example/build/Debug-iphonesimulator/InjectionTDD/ && zip -r ../../../../InjectionTDD.framework.zip InjectionTDD.framework/
+- cd -
+
+deploy:
+  provider: releases
+  api_key: "$GITHUB_TOKEN"
+  file: "InjectionTDD.framework.zip"
+  skip_cleanup: true
+  on:
+    tags: true
