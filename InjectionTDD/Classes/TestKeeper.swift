@@ -15,8 +15,8 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
     var failedTestCases = 0
     var failedCurrentTestCase = false
     
-    func finishedSuccessed(_ name: String){}
-    func finishedWithError(_ name: String){}
+    func finishedSuccessed(_ name: String, testCases: Int){}
+    func finishedWithError(_ name: String, failedTestCases: Int, failures: Int){}
     
     public func testSuiteWillStart(_ testSuite: XCTestSuite) {
         suites.insert(testSuite.name)
@@ -31,7 +31,11 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
         }
         suites.remove(testSuite.name)
         let safeName = testSuite.name.replacingOccurrences(of: "\"", with: "")
-        failures > 0 ? finishedWithError(safeName) : finishedSuccessed(safeName)
+        if failures > 0{
+            finishedWithError(safeName, failedTestCases: failedTestCases, failures: failures)
+        }else{
+            finishedSuccessed(safeName, testCases: testCases)
+        }
     }
     
     
