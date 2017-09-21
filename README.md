@@ -11,6 +11,10 @@ This library allows hanging Xcode unit tests in order to
 let injectionforxcode tool ability to live update codes and its
 unit tests.
 
+## Swift version
+
+This branch is compatible with `Swift 4` and Xcode 9. For Swift3, checkout branch `swift3`.
+
 ## Requirements
 
 ## Installation
