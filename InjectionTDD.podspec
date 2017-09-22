@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'InjectionTDD'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'TDD test support'
   s.platform         = :ios
   s.description      = <<-DESC
-This library allows hanging Xcode unit tests in order to
-let injectionforxcode tool ability to live update codes and its
-unit tests.
+This library allows to freeze Xcode unit tests in order to
+let injectionforxcode tool ability to live update implementation code 
+and its unit tests.
 
 This library has sense to work only with injectionforxcode to
 give full TDD experience.
