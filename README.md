@@ -10,7 +10,7 @@
 
 # Synopsis
 
-This library triggers Xcode unit tests using [injectionforxcode](https://github.com/johnno1962/injectionforxcode) tool.
+This library triggers Xcode unit tests using [John Holdsworth](https://github.com/johnno1962)'s [injectionforxcode](https://github.com/johnno1962/injectionforxcode) tool.
 
 InjectionTDD immediatelly runs your related unit tests, every time you save implemntation file with ⌘+S.
 
@@ -23,7 +23,7 @@ This branch is compatible with `Swift 4` and Xcode 9. For Swift3, checkout branc
 
 ## Requirements
 
-* [injectionforxcode](https://github.com/johnno1962/injectionforxcode) (version ???, TDB)
+* [injectionforxcode](http://johnholdsworth.com/injection.html) (version with TDD)
 * implementation and unit test written in **Swift** (project can be mixed ObjC and Swift)
 * Xcode 8 or Xcode 9
 * valid global Xcode version using `xcode-select`
@@ -32,6 +32,7 @@ This branch is compatible with `Swift 4` and Xcode 9. For Swift3, checkout branc
 
 * no static libraries (`.a` or static `.framework`) used in a target
 * testing target has "Host Application"
+* ⌘+U required when adding new `.swift` file
 
 ![requirement_host_application](documentation/images/requirement_host_application.png).
 
