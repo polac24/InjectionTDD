@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1008FD741F77EEFA0077316E /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD731F77EEFA0077316E /* ExampleViewModel.swift */; };
+		1008FD761F77EF1D0077316E /* ExampleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD751F77EF1D0077316E /* ExampleStruct.swift */; };
+		1008FD781F77EF7A0077316E /* ExampleClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD771F77EF7A0077316E /* ExampleClassExtension.swift */; };
+		1008FD7A1F77EFA50077316E /* ExampleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD791F77EFA50077316E /* ExampleViewModelTests.swift */; };
+		1008FD7C1F77EFFD0077316E /* ExampleStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD7B1F77EFFD0077316E /* ExampleStructTests.swift */; };
 		10C976AA1F6D96CA00B5BBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C976A91F6D96CA00B5BBF7 /* AppDelegate.swift */; };
 		10C976AC1F6D96CA00B5BBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C976AB1F6D96CA00B5BBF7 /* ViewController.swift */; };
 		10C976AF1F6D96CA00B5BBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C976AD1F6D96CA00B5BBF7 /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 
 /* Begin PBXFileReference section */
 		0143CEA12B349DEE1433BC55 /* Pods_InjectionTDD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InjectionTDD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1008FD731F77EEFA0077316E /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
+		1008FD751F77EF1D0077316E /* ExampleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStruct.swift; sourceTree = "<group>"; };
+		1008FD771F77EF7A0077316E /* ExampleClassExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleClassExtension.swift; sourceTree = "<group>"; };
+		1008FD791F77EFA50077316E /* ExampleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModelTests.swift; sourceTree = "<group>"; };
+		1008FD7B1F77EFFD0077316E /* ExampleStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStructTests.swift; sourceTree = "<group>"; };
 		10C976A71F6D96CA00B5BBF7 /* InjectionTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InjectionTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C976A91F6D96CA00B5BBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10C976AB1F6D96CA00B5BBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +91,9 @@
 				10C976B01F6D96CA00B5BBF7 /* Assets.xcassets */,
 				10C976B21F6D96CA00B5BBF7 /* LaunchScreen.storyboard */,
 				10C976B51F6D96CA00B5BBF7 /* Info.plist */,
+				1008FD731F77EEFA0077316E /* ExampleViewModel.swift */,
+				1008FD751F77EF1D0077316E /* ExampleStruct.swift */,
+				1008FD771F77EF7A0077316E /* ExampleClassExtension.swift */,
 			);
 			path = InjectionTDD;
 			sourceTree = "<group>";
@@ -90,6 +103,8 @@
 			children = (
 				10C976BE1F6D96CB00B5BBF7 /* InjectionTDDTests.swift */,
 				10C976C01F6D96CB00B5BBF7 /* Info.plist */,
+				1008FD791F77EFA50077316E /* ExampleViewModelTests.swift */,
+				1008FD7B1F77EFFD0077316E /* ExampleStructTests.swift */,
 			);
 			path = InjectionTDDTests;
 			sourceTree = "<group>";
@@ -361,8 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1008FD781F77EF7A0077316E /* ExampleClassExtension.swift in Sources */,
 				10C976AC1F6D96CA00B5BBF7 /* ViewController.swift in Sources */,
+				1008FD741F77EEFA0077316E /* ExampleViewModel.swift in Sources */,
 				10C976AA1F6D96CA00B5BBF7 /* AppDelegate.swift in Sources */,
+				1008FD761F77EF1D0077316E /* ExampleStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C976BF1F6D96CB00B5BBF7 /* InjectionTDDTests.swift in Sources */,
+				1008FD7C1F77EFFD0077316E /* ExampleStructTests.swift in Sources */,
+				1008FD7A1F77EFA50077316E /* ExampleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
