@@ -115,32 +115,11 @@ To display notification everytime your test finishes, install extra breakpoints 
 
 **:warning: Remeber to install breakpoints when Xcode is closed, otherwise new breakpoints may not be added**
 
-#### - When using CocoaPods (source available)
 
 ```bash
-curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 InjectionTDD-master/scripts/update_breakpoints_source/
-./update_breakpoints_source.sh
+mkdir -p /tmp/update_breakpoints_tdd && curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 --directory /tmp/update_breakpoints_tdd InjectionTDD-master/scripts/update_breakpoints/ && /tmp/update_breakpoints_tdd/update_breakpoints.sh 
 ```
 
-#### - When using `.framework` (no source available)
-
-```bash
-curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 InjectionTDD-master/scripts/update_breakpoints_binary/
-./update_breakpoints_binary.sh
-```
-
-#### - Simple notification for both CocoaPods & `.framework`
-
-You can also install notification that do not provide any details and therefore can be used with both scenarios (with or without sources):
-
-![Success](documentation/images/notification_success_generic.png)
-
-![Failure](documentation/images/notification_failure_generic.png)
-
-```bash
-curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 InjectionTDD-master/scripts/update_breakpoints_generic/
-./update_breakpoints_generic.sh
-```
 
 ## Recommendations
 
