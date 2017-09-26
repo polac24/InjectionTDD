@@ -117,7 +117,7 @@ To display notification everytime your test finishes, install extra breakpoints 
 
 
 ```bash
-mkdir -p /tmp/update_breakpoints_tdd && curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 --directory /tmp/update_breakpoints_tdd InjectionTDD-master/scripts/update_breakpoints/ && /tmp/update_breakpoints_tdd/update_breakpoints.sh 
+mkdir -p /tmp/update_breakpoints_tdd && curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 --directory /tmp/update_breakpoints_tdd InjectionTDD-master/scripts/update_breakpoints/ && cd /tmp/update_breakpoints_tdd/ && ./update_breakpoints.sh && cd -
 ```
 
 
