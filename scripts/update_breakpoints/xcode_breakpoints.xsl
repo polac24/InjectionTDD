@@ -26,25 +26,25 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- int $count = $arg4">
+                     consoleCommand = "e -l objc -- int $count = $arg2">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- $count = $arg4; int $dummyV = 1">
+                     consoleCommand = "e -l objc -- $count = $arg2; int $dummyV = 1">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- const char * $testName = (const char *)[(NSString*)[$arg3 description] UTF8String]">
+                     consoleCommand = "e -l objc -- const char * $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- $testName = (const char *)[(NSString*)[$arg3 description] UTF8String]; int $dummyV = 1">
+                     consoleCommand = "e -l objc -- $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]; int $dummyV = 1">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
@@ -62,7 +62,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   symbolName = "InjectionTDD.InjectionTDDTestsObserver.finishedSuccessed(Swift.String, testCases: Swift.Int) -&gt; ()"
                   moduleName = "InjectionTDD"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///srv/git/private/InjectionTDD/InjectionTDD/Classes/TestKeeper.swift"
+                  urlString = ""
                   timestampString = "528046530.566203"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
@@ -85,37 +85,37 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- int $count = $arg4">
+                     consoleCommand = "e -l objc -- int $count = $arg2">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- $count = $arg4; int $dummyV = 1">
+                     consoleCommand = "e -l objc -- $count = $arg2; int $dummyV = 1">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- int $failures = $arg5">
+                     consoleCommand = "e -l objc -- int $failures = $arg3">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- $failures = $arg5; int $dummyV = 1">
+                     consoleCommand = "e -l objc -- $failures = $arg3; int $dummyV = 1">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- const char * $testName = (const char *)[(NSString*)[$arg3 description] UTF8String]">
+                     consoleCommand = "e -l objc -- const char * $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "e -l objc -- $testName = (const char *)[(NSString*)[$arg3 description] UTF8String]; int $dummyV = 1">
+                     consoleCommand = "e -l objc -- $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]; int $dummyV = 1">
                   </ActionContent>
                </BreakpointActionProxy>
                <BreakpointActionProxy
@@ -133,7 +133,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   symbolName = "InjectionTDD.InjectionTDDTestsObserver.finishedWithError(Swift.String, failedTestCases: Swift.Int, failures: Swift.Int) -&gt; ()"
                   moduleName = "InjectionTDD"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///srv/git/private/InjectionTDD/InjectionTDD/Classes/TestKeeper.swift"
+                  urlString = ""
                   timestampString = "528046530.56995"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
