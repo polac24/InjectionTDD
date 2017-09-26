@@ -9,17 +9,30 @@ import XCTest
 
 @objc
 public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
+    struct SuiteResults{
+        var failures:Int
+        var testCases:Int
+        var failedTestCases:Int
+        var name:String
+    }
+    
     
     var suites:Set<String> = []
     var failures = 0
     var testCases = 0
     var failedTestCases = 0
     var failedCurrentTestCase = false
+    var finishedSuites = [SuiteResults]()
+    var operation:Operation?
     
-    func finishedSuccessed(_ name: String){}
-    func finishedWithError(_ name: String){}
+    
+    func finishedSuccessed(_ name: NSString, testCases: Int){}
+    func finishedWithError(_ name: NSString, failedTestCases: Int, failures: Int){}
     
     public func testSuiteWillStart(_ testSuite: XCTestSuite) {
+        operation?.cancel()
+        
+        
         if let name = testSuite.name{
             suites.insert(name)
         }
@@ -34,7 +47,17 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
         }
         suites.remove(name)
         let safeName = name.replacingOccurrences(of: "\"", with: "")
-        failures > 0 ? finishedWithError(safeName) : finishedSuccessed(safeName)
+        let results = SuiteResults(failures: failures, testCases: testCases, failedTestCases: failedTestCases, name: safeName)
+        finishedSuites.append(results)
+        
+        let operation = BlockOperation {[finishedSuites] in
+            self.presentSuiteResults(results: finishedSuites)
+            self.finishedSuites = []
+        }
+        self.operation = operation
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            OperationQueue.main.addOperation(operation)
+        }
     }
     
     
@@ -53,6 +76,28 @@ public class InjectionTDDTestsObserver:NSObject, XCTestObservation{
             failedTestCases += 1
         }
     }
+    
+    private func presentSuiteResults(results:[SuiteResults]){
+        guard results.count > 0 else{
+            return
+        }
+        let failures = results.reduce(0, {$0+$1.failures})
+        let testCases = results.reduce(0, {$0+$1.testCases})
+        let failedTestCases = results.reduce(0, {$0+$1.failedTestCases})
+        let subtitle:NSString
+        if (results.count > 1){
+            subtitle = "\(results.count) suites" as NSString
+        }else{
+            subtitle = (results.first?.name ?? "") as NSString
+        }
+        
+        if failures > 0{
+            finishedWithError(subtitle, failedTestCases: failedTestCases, failures: failures)
+        }else{
+            finishedSuccessed(subtitle, testCases: testCases)
+        }
+    }
+    
 }
 
 @objc
