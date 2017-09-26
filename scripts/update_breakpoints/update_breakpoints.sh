@@ -1,5 +1,5 @@
 #!/bin/sh
- 
+set -e
 # Backup previous versions
 cp ~/Library/Developer/Xcode/UserData/xcdebugger/Breakpoints_v2.xcbkptlist ~/Library/Developer/Xcode/UserData/xcdebugger/Breakpoints_v2.xcbkptlist~
 
