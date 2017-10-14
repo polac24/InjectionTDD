@@ -106,6 +106,10 @@ class TestKeeper: XCTestCase {
     var observer: InjectionTDDTestsObserver = {
         let observer = InjectionTDDTestsObserver()
         XCTestObservationCenter.shared().addTestObserver(observer)
+        
+        if (Bundle(path: "/tmp/injectionforxcode/InjectionLoader.bundle")?.load()) != true {
+            print ("Warning: Injection for Xcode not found")
+        }
         print("Ready for InjectionTDD...")
         
         RunLoop.current.run()
