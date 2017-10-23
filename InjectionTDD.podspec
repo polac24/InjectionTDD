@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'InjectionTDD'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'TDD test support'
   s.platform         = :ios
   s.description      = <<-DESC
