@@ -10,6 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </xsl:template>
 
 <xsl:template match="BreakpointProxy[BreakpointContent[contains(@symbolName , 'InjectionTDD')]]"/>
+<xsl:template match="BreakpointProxy[BreakpointContent[contains(@symbolName , 'TDDInjection')]]"/>
 
 <xsl:template match="Breakpoints">
     <xsl:copy>
@@ -20,37 +21,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
-            symbolName = "InjectionTDD.InjectionTDDTestsObserver.finishedSuccessed"
+            symbolName = "[TDDInjectionTestsObserver failedWithTitle:allFailedCasesCount:allFailuresCount:]"
             moduleName = "">
             <Actions>
                <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- int $count = $arg2">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- $count = $arg2; int $dummyV = 1">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- const char * $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]; int $dummyV = 1">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.AppleScript">
                   <ActionContent
-                     script = "display notification &quot;Suceeded @$count@ tests&quot; with title &quot;Tests Succeeded&quot; subtitle @$testName@">
+                     script = "display notification &quot;Failed tests &quot; with title &quot;Tests Failed&quot; ">
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>
@@ -59,16 +36,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InjectionTDD.InjectionTDDTestsObserver.finishedSuccessed(Swift.String, testCases: Swift.Int) -&gt; ()"
+                  symbolName = "-[TDDInjectionTestsObserver failedWithTitle:allFailedCasesCount:allFailuresCount:]"
                   moduleName = "InjectionTDD"
                   usesParentBreakpointCondition = "Yes"
                   urlString = ""
-                  timestampString = "528046530.566203"
+                  timestampString = "530889001.663247"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "73">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -79,49 +56,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
-            symbolName = "InjectionTDD.InjectionTDDTestsObserver.finishedWithError"
+            symbolName = "[TDDInjectionTestsObserver succeededWithTitle:allCasesCount:]"
             moduleName = "">
             <Actions>
                <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- int $count = $arg2">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- $count = $arg2; int $dummyV = 1">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- int $failures = $arg3">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- $failures = $arg3; int $dummyV = 1">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- const char * $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "e -l objc -- $testName = (const char *)[(NSString*)[$arg1 description] UTF8String]; int $dummyV = 1">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.AppleScript">
                   <ActionContent
-                     script = "display notification &quot;Failed with @$count@ tests (@$failures@ failures)&quot; with title &quot;Tests Failed&quot; subtitle @$testName@">
+                     script = "display notification &quot;Suceeded tests&quot; with title &quot;Tests Succeeded&quot; ">
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>
@@ -130,16 +71,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InjectionTDD.InjectionTDDTestsObserver.finishedWithError(Swift.String, failedTestCases: Swift.Int, failures: Swift.Int) -&gt; ()"
+                  symbolName = "-[TDDInjectionTestsObserver succeededWithTitle:allCasesCount:]"
                   moduleName = "InjectionTDD"
                   usesParentBreakpointCondition = "Yes"
                   urlString = ""
-                  timestampString = "528046530.56995"
+                  timestampString = "530889001.667727"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "32">
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "61">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -27,7 +27,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "NO">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -49,6 +49,13 @@
             ReferencedContainer = "container:InjectionTDD.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "INJECTION_TDD_SKIP"
+            value = "FALSE"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
