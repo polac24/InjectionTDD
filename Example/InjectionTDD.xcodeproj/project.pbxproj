@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1008F9031FA4D7F9003F4BF1 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008F9021FA4D7F9003F4BF1 /* ViewControllerTests.swift */; };
 		1008FD741F77EEFA0077316E /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD731F77EEFA0077316E /* ExampleViewModel.swift */; };
 		1008FD761F77EF1D0077316E /* ExampleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD751F77EF1D0077316E /* ExampleStruct.swift */; };
 		1008FD781F77EF7A0077316E /* ExampleClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1008FD771F77EF7A0077316E /* ExampleClassExtension.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		0143CEA12B349DEE1433BC55 /* Pods_InjectionTDD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InjectionTDD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1008F9021FA4D7F9003F4BF1 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		1008FD731F77EEFA0077316E /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		1008FD751F77EF1D0077316E /* ExampleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStruct.swift; sourceTree = "<group>"; };
 		1008FD771F77EF7A0077316E /* ExampleClassExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleClassExtension.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				10C976BE1F6D96CB00B5BBF7 /* InjectionTDDTests.swift */,
+				1008F9021FA4D7F9003F4BF1 /* ViewControllerTests.swift */,
 				10C976C01F6D96CB00B5BBF7 /* Info.plist */,
 				1008FD791F77EFA50077316E /* ExampleViewModelTests.swift */,
 				1008FD7B1F77EFFD0077316E /* ExampleStructTests.swift */,
@@ -390,6 +393,7 @@
 			files = (
 				10C976BF1F6D96CB00B5BBF7 /* InjectionTDDTests.swift in Sources */,
 				1008FD7C1F77EFFD0077316E /* ExampleStructTests.swift in Sources */,
+				1008F9031FA4D7F9003F4BF1 /* ViewControllerTests.swift in Sources */,
 				1008FD7A1F77EFA50077316E /* ExampleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
