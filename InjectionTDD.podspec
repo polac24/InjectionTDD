@@ -21,6 +21,6 @@ give full TDD experience.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'InjectionTDD/Classes/**/*'
-
+  s.pod_target_xcconfig = { 'GCC_GENERATE_DEBUGGING_SYMBOLS' => 'NO' }
   s.frameworks = 'XCTest'
 end
