@@ -9,8 +9,6 @@
 #import "TDDSuiteResult.h"
 #import "NSArray+TDDHelpers.h"
 
-extern char **environ;
-
 @interface TDDInjectionTestsObserver ()
 @property (nonatomic, copy, nullable) NSString *currentSuiteName;
 @property (nonatomic, assign) NSUInteger failuresCount;

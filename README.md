@@ -19,7 +19,7 @@ InjectionTDD immediatelly runs your related unit tests, every time you save impl
 
 ## Swift version
 
-This branch is compatible with `Swift 4` and Xcode 9. For Swift3, checkout branch `swift3`.
+`InjectionTDD` library is written in Objective-C so it works with any Swift version.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ This branch is compatible with `Swift 4` and Xcode 9. For Swift3, checkout branc
 
 * no static libraries (`.a` or static `.framework`) used in a target
 * testing target has "Host Application"
-* ⌘+U required when adding new `.swift` file
+* ⌘+⇧+U (or simple ⌘+U)  required when adding new `.swift` file
 
 ![requirement_host_application](documentation/images/requirement_host_application.png).
 
@@ -55,25 +55,12 @@ InjectionTDD is available through [CocoaPods](http://cocoapods.org).
 
 To install it, simply add the following line to your `Podfile`, **into Tests target :warning:**:
 
-For Swift 4:
-
 ```ruby
 ...
   target 'REMTTests' do
     # Your test Pods
   
-    pod 'InjectionTDD', '~> 0.4'
-  end
-```
-
-For Swift 3:
-
-```ruby
-...
-  target 'REMTTests' do
-    # Your test Pods
-
-    pod 'InjectionTDD', '~> 0.3'
+    pod 'InjectionTDD', '~> 0.5'
   end
 ```
 
@@ -85,14 +72,15 @@ You can find sample integration on [one approach to integrate binary framework](
 
 ## How to use it?
 
-1. After successful  `InjectionTDD` integration with your test target (step 2.), run it (⌘+U) and you will see prompt `Ready for InjectionTDD...`
+1. Run [injectionforxcode](https://github.com/johnno1962/injectionforxcode)
+2. After successful  `InjectionTDD` integration with your test target (step 2.), run it (⌘+U) and you will see prompt `Ready for InjectionTDD...`
 
 ![prompt](documentation/images/prompt.png)
 
-2. It means that your unit tests wait for injection bundles and will never terminate :white_check_mark:
-3. Using [injectionforxcode](https://github.com/johnno1962/injectionforxcode), inject your implementation (e.g. shortcut **⌃+=**)
-4. injectionforxcode automatically finds all related tests for your file and execute them
-5. On output console you will see summary of all actions and summary of your tests :tada:
+3. It means that your unit tests wait for injection bundles and will never terminate :white_check_mark:
+4. Using [injectionforxcode](https://github.com/johnno1962/injectionforxcode), inject your implementation (e.g. shortcut **⌃+=**)
+5. injectionforxcode automatically finds all related tests for your file and execute them
+6. On output console you will see summary of all actions and summary of your tests :tada:
 
 ![result](documentation/images/result.png)
 
@@ -101,6 +89,10 @@ You can find sample integration on [one approach to integrate binary framework](
 6. To get feedback immediatelly after each save with ⌘+S, enable "FileWatcher" in injectionforxcode:
 
 ![file_watcher](documentation/images/file_watcher.png)
+
+7. You can selectively disable `InjectionTDD` in your schema but adding `INJECTION_TDD_SKIP=TRUE` environment variable in a test action:
+
+![Skip TDD](documentation/images/skip.png)
 
 ## Test Summary Notification
 
@@ -119,6 +111,12 @@ To display notification everytime your test finishes, install extra breakpoints 
 ```bash
 mkdir -p /tmp/update_breakpoints_tdd && curl https://codeload.github.com/polac24/InjectionTDD/tar.gz/master | tar -xz --strip=3 --directory /tmp/update_breakpoints_tdd InjectionTDD-master/scripts/update_breakpoints/ && cd /tmp/update_breakpoints_tdd/ && ./update_breakpoints.sh && cd -
 ```
+
+## Best practicies
+
+1. Keep InjectionTDD integrated all the time (e.g. add it to `Podfile`) and provide two schemas: (1) used for TDD development only, (2) used for CI with disabled InjectionTDD (see [how](#how-to-use-it)). This helps to quickly switch between standard and TDD development.
+
+![Schemas](documentation/images/schemas.png)
 
 
 ## Recommendations
