@@ -15,4 +15,9 @@ class InjectionTDDTests: XCTestCase {
         XCTAssertEqual(ViewController().someFunction(), "A")
     }
     
+    func testMainQueueIsNotBlocked(){
+        DispatchQueue.main.async(execute: expectation(description: "Free Main queue").fulfill)
+        
+        waitForExpectations(timeout: 0.1)
+    }
 }

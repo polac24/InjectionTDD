@@ -52,8 +52,8 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "INJECTION_TDD_SKIP"
-            value = "FALSE"
-            isEnabled = "YES">
+            value = "TRUE"
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
