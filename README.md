@@ -2,9 +2,9 @@
 
 [![CI Status](http://img.shields.io/travis/polac24/InjectionTDD.svg?style=flat)](https://travis-ci.org/polac24/InjectionTDD)
 [![Version](https://img.shields.io/cocoapods/v/InjectionTDD.svg?style=flat)](http://cocoapods.org/pods/InjectionTDD)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/InjectionTDD.svg?style=flat)](http://cocoapods.org/pods/InjectionTDD)
 [![Platform](https://img.shields.io/cocoapods/p/InjectionTDD.svg?style=flat)](http://cocoapods.org/pods/InjectionTDD)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![Swift4](https://img.shields.io/badge/Swift-4.0-brightgreen.svg)
 ![Swift3.1](https://img.shields.io/badge/Swift-3.1-yellowgreen.svg)
@@ -67,7 +67,7 @@ To install it, simply add the following line to your `Podfile`, **into Tests tar
 
 ### - Integration using Carthage
 
-Add the following line to the `Cartfile` and link generated .framework library with your **test target**.
+Add the following line to the `Cartfile` and link generated `.framework` library with your **test target**.
 ```ruby
 github "polac24/InjectionTDD"
 ```
