@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/InjectionTDD.svg?style=flat)](http://cocoapods.org/pods/InjectionTDD)
 [![License](https://img.shields.io/cocoapods/l/InjectionTDD.svg?style=flat)](http://cocoapods.org/pods/InjectionTDD)
 [![Platform](https://img.shields.io/cocoapods/p/InjectionTDD.svg?style=flat)](http://cocoapods.org/pods/InjectionTDD)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![Swift4](https://img.shields.io/badge/Swift-4.0-brightgreen.svg)
 ![Swift3.1](https://img.shields.io/badge/Swift-3.1-yellowgreen.svg)
@@ -64,9 +65,16 @@ To install it, simply add the following line to your `Podfile`, **into Tests tar
   end
 ```
 
-### - Integration compiled  `.framework`
+### - Integration using Carthage
 
-Add binary framework to your test target. You can find compiled framework (`InjectionTDD.framework.zip`) in [releases section](https://github.com/polac24/InjectionTDD/releases).
+Add the following line to the `Cartfile` and link generated .framework library with your **test target**.
+```ruby
+github "polac24/InjectionTDD"
+```
+
+### - Integration with compiled  `.framework`
+
+Add binary framework to your **test target**. You can find compiled framework (`InjectionTDD.framework.zip`) in [releases section](https://github.com/polac24/InjectionTDD/releases).
 
 You can find sample integration on [one approach to integrate binary framework](documentation/Integrate_binary.md).
 
