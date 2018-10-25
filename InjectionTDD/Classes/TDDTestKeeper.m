@@ -22,13 +22,53 @@
     
     TDDInjectionTestsObserver *observer = [TDDInjectionTestsObserver new];
     [XCTestObservationCenter.sharedTestObservationCenter addTestObserver:observer];
-    
-    if (![[NSBundle bundleWithPath: @"/tmp/injectionforxcode/InjectionLoader.bundle"] load]) {
-        NSLog (@"Warning: Injection for Xcode not found. Please open Injection For Xcode.");
-    }else{
-        NSLog(@"Ready for InjectionTDD...");
+
+    NSString *injectionForXcode = @"/tmp/injectionforxcode";
+    NSString *injectionIII = @"/Applications/InjectionIII.app/Contents/Resources/";
+
+#if TARGET_OS_IPHONE
+    NSString *platformString = @"iOSInjection{version}.bundle";
+#endif
+#if TARGET_OS_TVOS
+    NSString *platformString = @"tvOSInjection{version}.bundle";
+#endif
+#if TARGET_OS_MACOS
+    NSString *platformString = @"macOSInjection{version}.bundle";
+#endif
+
+    NSArray *paths = [NSArray arrayWithObjects:
+                      injectionForXcode,
+                      injectionIII,
+                      nil];
+
+    BOOL isDirectory = NO;
+    BOOL loaded = NO;
+    for (NSString *path in paths) {
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory]) {
+            if ([path isEqualToString:injectionIII]) {
+                NSString *bundlePath = [path stringByAppendingString:[platformString stringByReplacingOccurrencesOfString:@"{version}"
+                                                                                                               withString:@"10"]];
+                BOOL xcodeWasLoaded = [[NSBundle bundleWithPath:bundlePath] load];
+                if (xcodeWasLoaded) {
+                    loaded = xcodeWasLoaded;
+                } else {
+                    bundlePath = [path stringByAppendingString:[platformString stringByReplacingOccurrencesOfString:@"{version}"
+                                                                                                         withString:@""]];
+                    loaded = [[NSBundle bundleWithPath:bundlePath] load];
+                }
+            } else {
+                loaded = [[NSBundle bundleWithPath: [path stringByAppendingString:@"/InjectionLoader.bundle"]] load];
+            }
+            break;
+        }
     }
-    
+
+    if (loaded) {
+        NSLog(@"Ready for InjectionTDD...");
+    } else {
+        NSLog (@"Warning: Injection for Xcode not found. Please open Injection For Xcode.");
+    }
+
     [NSRunLoop.currentRunLoop run];
     [XCTestObservationCenter.sharedTestObservationCenter removeTestObserver:observer];
 
