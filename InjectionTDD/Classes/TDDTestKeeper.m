@@ -40,8 +40,8 @@
 #endif
 
     NSArray *paths = [NSArray arrayWithObjects:
-                      injectionForXcode,
                       injectionIII,
+                      injectionForXcode,
                       nil];
 
     BOOL isDirectory = NO;
