@@ -26,13 +26,16 @@
     NSString *injectionForXcode = @"/tmp/injectionforxcode";
     NSString *injectionIII = @"/Applications/InjectionIII.app/Contents/Resources/";
 
-#if TARGET_OS_IPHONE
+
+#ifdef TARGET_OS_IOS
     NSString *platformString = @"iOSInjection{version}.bundle";
 #endif
-#if TARGET_OS_TVOS
-    NSString *platformString = @"tvOSInjection{version}.bundle";
+
+#ifdef TARGET_OS_TV
+    platformString = @"tvOSInjection{version}.bundle";
 #endif
-#if TARGET_OS_MACOS
+
+#ifdef TARGET_OS_MACOS
     NSString *platformString = @"macOSInjection{version}.bundle";
 #endif
 
