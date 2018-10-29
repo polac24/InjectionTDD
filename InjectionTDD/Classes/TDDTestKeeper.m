@@ -27,12 +27,12 @@
     NSString *injectionIII = @"/Applications/InjectionIII.app/Contents/Resources/";
 
 
-#ifdef TARGET_OS_IOS
-    NSString *platformString = @"iOSInjection{version}.bundle";
-#elif TARGET_OS_TV
-    NSString *platformString = @"tvOSInjection{version}.bundle";
+#if TARGET_OS_TV
+  NSString *platformString = @"tvOSInjection{version}.bundle";
+#elif TARGET_OS_IOS
+  NSString *platformString = @"iOSInjection{version}.bundle";
 #elif TARGET_OS_MACOS
-    NSString *platformString = @"macOSInjection{version}.bundle";
+  NSString *platformString = @"macOSInjection{version}.bundle";
 #endif
 
     NSArray *paths = [NSArray arrayWithObjects:
