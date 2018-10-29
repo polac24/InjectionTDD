@@ -29,13 +29,9 @@
 
 #ifdef TARGET_OS_IOS
     NSString *platformString = @"iOSInjection{version}.bundle";
-#endif
-
-#ifdef TARGET_OS_TV
-    platformString = @"tvOSInjection{version}.bundle";
-#endif
-
-#ifdef TARGET_OS_MACOS
+#elif TARGET_OS_TV
+    NSString *platformString = @"tvOSInjection{version}.bundle";
+#elif TARGET_OS_MACOS
     NSString *platformString = @"macOSInjection{version}.bundle";
 #endif
 
