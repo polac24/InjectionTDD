@@ -31,7 +31,7 @@
   NSString *platformString = @"tvOSInjection{version}.bundle";
 #elif TARGET_OS_IOS
   NSString *platformString = @"iOSInjection{version}.bundle";
-#elif TARGET_OS_MACOS
+#elif TARGET_OS_OSX
   NSString *platformString = @"macOSInjection{version}.bundle";
 #endif
 
